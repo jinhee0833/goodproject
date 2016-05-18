@@ -1,0 +1,35 @@
+<tools:LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/helloants_white"
+    tools:context="com.helloants.helloants.fragment.financeInfo.contentDetail.ContentDetailLast">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="당신이 놓친 정보"
+        android:textColor="@color/helloants_black"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/helloants_yellow"
+        android:textStyle="bold"/>
+
+    <GridView
+        android:id="@+id/recommend_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:columnWidth="150dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:isScrollContainer="false"
+        >
+    </GridView>
+</tools:LinearLayout>

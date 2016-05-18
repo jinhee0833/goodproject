@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.helloants.mm.helloants1.activity.login.BSInsertChoice">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_bs_bsinsertchoice"
+        android:layout_centerHorizontal="true"
+        android:text="지금부터 밑의 표를 만들 겁니다. 정확한 입력이 필요합니다. 한가한 저녁 시간에 옆에 통장을 가져다 두시고 경건한 마음으로 입력하시길 바랍니다."/>
+    <ImageView
+        android:id="@+id/img_bs_bsinsertchoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bs"/>
+    <Button
+        android:id="@+id/btn_skip_bsinsertchoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_bs_bsinsertchoice"
+        android:layout_alignLeft="@+id/img_bs_bsinsertchoice"
+        android:text="나중에 하기"/>
+    <Button
+        android:id="@+id/btn_insert_bsinsertchoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_bs_bsinsertchoice"
+        android:layout_alignRight="@+id/img_bs_bsinsertchoice"
+        android:text="입력하기"/>
+</RelativeLayout>

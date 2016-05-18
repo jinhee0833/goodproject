@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="자산 이름"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/dialog_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:hint="자산이름을 입력해 주세요."
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="자산 금액"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/dialog_edit_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:hint="자산금액을 입력해 주세요."
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="자산 유형"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/dialog_rg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/dialog_rb_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예·적금, 보험, 펀드, 주식등의 저축"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/dialog_rb_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="집, 보증금"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/dialog_rb_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현금"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/dialog_rb_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동차"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/dialog_rb_etc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기타"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

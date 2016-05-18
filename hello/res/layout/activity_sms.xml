@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/helloants_gray2">
+
+    <RelativeLayout
+        android:id="@+id/layout_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/helloants_yellow"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/img_btn_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/helloants_yellow"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/txv_title_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_btn_sms"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:textSize="12pt" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/layout_sms"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:text="자동으로 등록되지 않는 문자가 있으신가요?\n선택 후 전송 버튼을 눌러주세요." />
+
+        <ListView
+            android:id="@+id/listview_sms_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/helloants_gray2"
+            android:dividerHeight="10dp"></ListView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/list_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

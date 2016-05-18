@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    android:background="#FFF">
+
+    <TextView
+        android:id="@+id/txv_time_monthisfrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:textSize="16pt" />
+
+    <TextView
+        android:id="@+id/txv_sum_monthisfrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/txv_incomesum_monthisfrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txv_sum_monthisfrag"
+        android:padding="5dp"
+        android:textSize="8pt" />
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.helloants.helloants.activity.content.view.SlidingLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/helloants_yellow">
+
+            <TextView
+                android:id="@+id/reply_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/helloants_black"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/reply_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:text="X"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/helloants_black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/helloants_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/reply_content_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:hint="댓글"
+                android:textColor="@color/helloants_black"
+                android:textColorHint="@color/helloants_black"
+                android:theme="@style/EditTextColor"/>
+
+            <Button
+                android:id="@+id/reply_insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/reply_insert"
+                android:textColor="@color/helloants_black"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.helloants.helloants.activity.content.view.SlidingLinearLayout>

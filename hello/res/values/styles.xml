@@ -1,0 +1,31 @@
+<resources>
+    <style name="HelloAntsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FFD777</item>
+        <item name="colorPrimaryDark">#FFD777</item>
+        <item name="colorAccent">#404040</item>
+    </style>
+
+    <style name="MyTextInputLayoutTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">#0097A7</item>
+        <item name="colorControlNormal">#0097A7</item>
+        <item name="colorControlActivated">#0097A7</item>
+    </style>
+
+    <style name="FabTheme">
+        <item name="colorAccent">#00BCD4</item>
+    </style>
+    <style name="EditTextColor">
+        <item name="colorControlNormal">@color/helloants_black</item>
+        <item name="colorControlActivated">@color/helloants_black</item>
+        <item name="colorControlHighlight">@color/helloants_black</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/helloants_black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="colorAccent">@color/helloants_black</item>
+        <item name="colorControlNormal">@color/helloants_black</item>
+        <item name="colorControlActivated">@color/helloants_black</item>
+    </style>
+</resources>
