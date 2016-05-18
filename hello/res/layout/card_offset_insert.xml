@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlay_root_card_offset_insert"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,20 +9,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toLeftOf="@+id/datepick_carddate_cardoffset" />
+        android:layout_toLeftOf="@+id/npik_carddate_cardoffset" />
 
-    <DatePicker
-        android:id="@+id/datepick_carddate_cardoffset"
+    <NumberPicker
+        android:id="@+id/npik_carddate_cardoffset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:calendarViewShown="false"></DatePicker>
+        android:layout_centerInParent="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/datepick_carddate_cardoffset"
+        android:layout_toRightOf="@+id/npik_carddate_cardoffset"
         android:text="일" />
-
 </RelativeLayout>

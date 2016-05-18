@@ -1,20 +1,39 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.helloants.helloants.fragment.financeInfo.contentDetail.ContentDetailFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <ProgressBar
-        style="?android:attr/progressBarStyleLarge"
+    <FrameLayout
+        android:id="@+id/content_main_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/photoview_contentdetail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/imageview_description"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/txt_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center" />
-
-    <uk.co.senab.photoview.PhotoView
-        android:id="@+id/photoview_contentdetail"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:contentDescription="@string/imageview_description" />
-
-</FrameLayout>
+        android:layout_below="@+id/content_main_image"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/helloants_white"
+        android:text="참고 링크"/>
+</RelativeLayout>

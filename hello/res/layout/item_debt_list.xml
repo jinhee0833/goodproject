@@ -21,7 +21,7 @@
             android:paddingTop="10dp"
             android:textAlignment="viewStart"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/jeonjaesan" />
+            android:textColor="@color/debt" />
 
         <TextView
             android:id="@+id/txv_price_list"
@@ -36,6 +36,6 @@
             android:paddingRight="10dp"
             android:textAlignment="viewEnd"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/jeonjaesan" />
+            android:textColor="@color/debt" />
     </RelativeLayout>
 </LinearLayout>

@@ -17,8 +17,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_gravity="start"
-            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
             android:textAlignment="viewStart"
+            android:textColor="@color/jeonjaesan"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
@@ -29,8 +32,11 @@
             android:layout_below="@id/txv_name_fvlist"
             android:layout_gravity="end"
             android:inputType="number"
-            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
             android:textAlignment="viewEnd"
+            android:textColor="@color/jeonjaesan"
             android:textAppearance="?android:attr/textAppearanceSmall" />
     </RelativeLayout>
 

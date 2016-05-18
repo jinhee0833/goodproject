@@ -21,12 +21,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="?attr/actionBarSize"
-                app:layout_scrollFlags="scroll|enterAlways"/>
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/logo" />
+                </android.support.v7.widget.Toolbar>
 
             <android.support.design.widget.TabLayout
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:tabTextAppearance="?android:attr/textAppearanceMedium"
+                app:tabIndicatorColor="@color/helloants_black"
+                app:tabSelectedTextColor="@color/helloants_black"
+                app:tabTextColor="@color/helloants_white" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -49,7 +64,8 @@
             android:layout_margin="10dp"
             android:clickable="true"
             android:src="@android:drawable/ic_menu_add"
-            app:backgroundTint="#FFD777" />
+            android:scaleType="center"
+            app:backgroundTint="@color/helloants_yellow" />
 
     </android.support.design.widget.CoordinatorLayout>
 
@@ -59,6 +75,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:menu="@menu/drawer"/>
+        app:itemBackground="@drawable/drawer_selector"
+        app:menu="@menu/drawer" />
 
 </android.support.v4.widget.DrawerLayout>

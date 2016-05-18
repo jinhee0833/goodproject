@@ -23,14 +23,14 @@
                 android:orientation="vertical"
                 android:padding="10dp">
 
-                <TextView
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="HELLO ANT$"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/helloants_black"
-                    android:textStyle="bold" />
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -248,37 +248,38 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/rlay_kakaologin_login"
+                    android:id="@+id/rlay_naverlogin_login"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginBottom="5dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="5dp"
-                    android:background="@drawable/kakaobtn">
+                    android:background="@drawable/naverbtn">
 
                     <TextView
-                        android:id="@+id/txv_kakaologin_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:layout_toLeftOf="@+id/txv_kakaologin_text"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:textColor="#3B1E1E" />
+                        android:layout_toLeftOf="@+id/txv_naverlogin_text"
+                        android:text="N"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/helloants_white"
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/txv_kakaologin_text"
+                        android:id="@+id/txv_naverlogin_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
                         android:paddingBottom="10dp"
                         android:paddingTop="10dp"
-                        android:text="Kakao Talk"
+                        android:text="Naver"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:textColor="#3B1E1E"
+                        android:textColor="@color/helloants_white"
                         android:textStyle="bold" />
                 </RelativeLayout>
             </LinearLayout>

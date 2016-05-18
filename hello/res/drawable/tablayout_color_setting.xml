@@ -1,0 +1,13 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/not_select_quadrangle" android:state_focused="false" android:state_pressed="false" android:state_selected="false" />
+    <item android:drawable="@drawable/select_quadrangle" android:state_focused="false" android:state_pressed="false" android:state_selected="true" />
+
+    <item android:drawable="@drawable/not_select_quadrangle" android:state_focused="true" android:state_pressed="false" android:state_selected="false" />
+    <item android:drawable="@drawable/select_quadrangle" android:state_focused="true" android:state_pressed="false" android:state_selected="true" />
+
+    <item android:drawable="@drawable/not_select_quadrangle" android:state_focused="false" android:state_pressed="true" android:state_selected="false" />
+    <item android:drawable="@drawable/select_quadrangle" android:state_focused="false" android:state_pressed="true" android:state_selected="true" />
+
+    <item android:drawable="@drawable/not_select_quadrangle" android:state_focused="true" android:state_pressed="true" android:state_selected="false" />
+    <item android:drawable="@drawable/select_quadrangle" android:state_focused="true" android:state_pressed="true" android:state_selected="true" />
+</selector>

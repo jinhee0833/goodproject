@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/antsevolution">
+    android:layout_height="200dp"
+    android:background="@drawable/drawerimage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/email_navheader"
+            android:padding="5dp"
+            android:textSize="10pt"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:background="#99000000"
+            android:gravity="center"
+            android:textColor="@color/helloants_white"
+            android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/name_navheader"
-        android:padding="5dp"
-        android:textSize="10pt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/email_navheader"
-        android:padding="5dp"
-        android:textSize="10pt"
-        android:layout_alignParentBottom="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

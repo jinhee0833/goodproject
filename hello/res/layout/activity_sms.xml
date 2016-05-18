@@ -27,6 +27,7 @@
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/img_btn_sms"
             android:padding="8dp"
+            android:textStyle="bold"
             android:textColor="#000"
             android:textSize="12pt" />
     </RelativeLayout>

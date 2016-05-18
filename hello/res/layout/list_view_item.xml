@@ -6,38 +6,41 @@
     android:layout_alignParentStart="true"
     android:layout_alignParentTop="true"
     android:orientation="horizontal"
-    android:paddingTop="15dp"
-    android:paddingLeft="10dp">
+    android:paddingLeft="10dp"
+    android:paddingTop="15dp">
 
     <View
         android:layout_width="5dp"
         android:layout_height="match_parent"
-        android:background="@color/helloants_yellow"/>
+        android:background="@color/helloants_yellow" />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="15dp">
+        android:paddingLeft="15dp"
+        android:paddingBottom="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/reply_person"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/helloants_black" />
+
             <TextView
                 android:id="@+id/reply_person_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="3dp"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/helloants_black"
-                android:textStyle="bold"
-                android:padding="3dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
@@ -50,40 +53,50 @@
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/reply_date_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/helloants_black"
                 android:layout_alignParentLeft="true"
-                android:padding="3dp"/>
+                android:padding="3dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/helloants_black" />
 
             <TextView
                 android:id="@+id/reply_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/reply_date_icon"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/helloants_black"
-                android:layout_toRightOf="@id/reply_date_icon"/>
-
-            <TextView
-                android:id="@+id/reply_like_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/helloants_black"
-                android:layout_toLeftOf="@+id/reply_like_count"
-                android:padding="3dp"/>
-
-            <TextView
-                android:id="@+id/reply_like_count"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/helloants_black"
-                android:layout_alignParentRight="true"
-                android:paddingRight="10dp"/>
+                android:textColor="@color/helloants_black" />
         </RelativeLayout>
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/reply_like_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/reply_like_count"
+            android:layout_centerVertical="true"
+            android:paddingBottom="3dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/helloants_black" />
+
+        <TextView
+            android:id="@+id/reply_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/helloants_black" />
+    </RelativeLayout>
 </LinearLayout>

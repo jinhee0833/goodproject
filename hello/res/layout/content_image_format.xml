@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:id="@+id/content"
-    android:padding="5dp">
-    <com.helloants.helloants.data.image.RecyclingImageView
+    android:background="@color/helloants_white"
+    >
+
+    <com.helloants.mm.helloants1.data.image.RecyclingImageView
+        android:id="@+id/content_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/content_image"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="bottom">
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
         <TextView
             android:id="@+id/subTitle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
+            android:layout_height="60dp"
             android:layout_gravity="bottom"
+            android:background="#55000000"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
             android:textColor="@android:color/white"
-            android:background="#55000000" />
+            android:textSize="14sp" />
     </LinearLayout>
 </FrameLayout>

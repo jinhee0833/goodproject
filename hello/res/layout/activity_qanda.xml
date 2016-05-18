@@ -29,7 +29,8 @@
             android:layout_toRightOf="@+id/img_btn_qanda"
             android:padding="8dp"
             android:textColor="#000"
-            android:textSize="12pt" />
+            android:textSize="12pt"
+            android:textStyle="bold"/>
 
     </RelativeLayout>
 

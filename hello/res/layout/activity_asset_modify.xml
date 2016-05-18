@@ -30,7 +30,8 @@
             android:layout_toRightOf="@+id/img_btn_aif"
             android:padding="8dp"
             android:textColor="#000"
-            android:textSize="12pt" />
+            android:textSize="12pt"
+            android:textStyle="bold"/>
 
     </RelativeLayout>
 
@@ -40,16 +41,22 @@
 
         <Button
             android:id="@+id/btn_addasset_assetinsertfrag"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:text="자산항목+" />
 
+        <Button
+            android:id="@+id/btn_adjust_assetinsertfrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="수정완료" />
     </RelativeLayout>
     <TextView
         android:text="*초기값 수정시 관련된 경제활동도 함께 수정 됩니다."
         android:padding="8dp"
-        android:textSize="10pt"
+        android:textSize="15sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <ListView

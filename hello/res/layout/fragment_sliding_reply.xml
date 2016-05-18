@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.helloants.helloants.activity.content.view.SlidingLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.helloants.mm.helloants1.activity.content.view.SlidingLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF"
+    android:background="@color/helloants_white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -13,10 +13,10 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/helloants_yellow"
             android:orientation="horizontal"
-            android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:background="@color/helloants_yellow">
+            android:paddingTop="10dp">
 
             <TextView
                 android:id="@+id/reply_count"
@@ -44,7 +44,9 @@
             android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="4" />
+            android:layout_weight="4"
+            android:divider="@color/helloants_white"
+            android:dividerHeight="0px" />
 
         <View
             android:layout_width="match_parent"
@@ -65,17 +67,17 @@
                 android:hint="댓글"
                 android:textColor="@color/helloants_black"
                 android:textColorHint="@color/helloants_black"
-                android:theme="@style/EditTextColor"/>
+                android:theme="@style/EditTextColor" />
 
             <Button
                 android:id="@+id/reply_insert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
+                android:layout_weight="1"
                 android:background="@drawable/reply_insert"
-                android:textColor="@color/helloants_black"
-                android:textAppearance="?android:attr/textAppearanceLarge"/>
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/helloants_black" />
         </LinearLayout>
     </LinearLayout>
-</com.helloants.helloants.activity.content.view.SlidingLinearLayout>
+</com.helloants.mm.helloants1.activity.content.view.SlidingLinearLayout>

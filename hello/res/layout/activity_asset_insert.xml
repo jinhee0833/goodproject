@@ -1,19 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llay_root_asset_insert_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.helloants.mm.helloants1.activity.login.AssetInsert">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="자산 목록을 파악합니다." />
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="자산 목록을 파악합니다."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/helloants_black" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:text="마이페이지에서 수정 가능합니다."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/helloants_gray" />
+
+    <ListView
+        android:id="@+id/list_asset_assetinsertactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
 
         <Button
             android:id="@+id/btn_addasset_assetinsertactivity"
@@ -29,13 +56,4 @@
             android:layout_alignParentRight="true"
             android:text="다음" />
     </RelativeLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="※작성완료 후에는 마이페이지에서 수정 가능합니다."/>
-    <ListView
-        android:id="@+id/list_asset_assetinsertactivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"></ListView>
-
 </LinearLayout>

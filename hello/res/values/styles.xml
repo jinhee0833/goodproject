@@ -1,9 +1,9 @@
 <resources>
     <style name="HelloAntsTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#FFD777</item>
-        <item name="colorPrimaryDark">#FFD777</item>
-        <item name="colorAccent">#404040</item>
+        <item name="colorPrimaryDark">@color/helloants_header</item> <!-- header -->
+        <item name="colorPrimary">@color/helloants_tab</item> <!-- tab -->
+        <item name="colorAccent">@color/helloants_menu_select</item> <!-- menu -->
     </style>
 
     <style name="MyTextInputLayoutTextAppearance" parent="TextAppearance.AppCompat">

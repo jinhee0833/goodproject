@@ -18,7 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="15dp">
+        android:paddingLeft="15dp"
+        android:paddingBottom="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -66,24 +67,33 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/helloants_black"
                 android:layout_toRightOf="@id/reply_date_icon"/>
-
-            <TextView
-                android:id="@+id/reply_like_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/helloants_black"
-                android:layout_toLeftOf="@+id/reply_like_count"
-                android:padding="3dp"/>
-
-            <TextView
-                android:id="@+id/reply_like_count"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/helloants_black"
-                android:layout_alignParentRight="true"
-                android:paddingRight="10dp"/>
         </RelativeLayout>
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/reply_like_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/reply_like_count"
+            android:layout_centerVertical="true"
+            android:paddingBottom="3dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/helloants_black" />
+
+        <TextView
+            android:id="@+id/reply_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/helloants_black" />
+    </RelativeLayout>
 </LinearLayout>

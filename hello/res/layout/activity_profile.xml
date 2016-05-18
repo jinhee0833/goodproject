@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -42,32 +43,27 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/circle_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ui_sam"
+                    app:siBorderColor="@color/helloants_yellow"
+                    app:siBorderWidth="3dp" />
+            </RelativeLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-
-                    <TextView
-                        android:id="@+id/profile_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#797979"
-                        android:textSize="10pt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" 회원정보"
-                        android:textColor="#797979"
-                        android:textSize="10pt"
-                        android:textStyle="bold" />
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -79,157 +75,215 @@
                         android:id="@+id/profile_name_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                        android:textColor="#998a6d3b"
+                        android:textSize="12pt" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" 이름 "
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt"
-                        android:textStyle="bold" />
+                        android:textColor="#998a6d3b"
+                        android:textSize="12pt"
+                         />
 
                     <TextView
                         android:id="@+id/profile_name_icon_angle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                        android:textColor="#998a6d3b"
+                        android:textSize="12pt" />
 
                     <TextView
                         android:id="@+id/profile_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textStyle="bold"
                         android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                        android:textSize="12pt" />
                 </LinearLayout>
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/horizon_line" />
+
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp">
+                android:background="@color/helloants_gray3"
+                android:orientation="vertical">
+
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
-                    <TextView
-                        android:id="@+id/profile_email_icon"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" 이메일 "
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/profile_email_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
 
-                    <TextView
-                        android:id="@+id/profile_email_icon_angle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                            android:textColor="#558a6d3b"
+                            android:textSize="12pt" />
 
-                    <TextView
-                        android:id="@+id/profile_email"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 이메일 "
+
+                            android:textColor="#558a6d3b"
+                            android:textSize="12pt"
+                            />
+
+                        <TextView
+                            android:id="@+id/profile_email_icon_angle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="#558a6d3b"
+                            android:textSize="12pt" />
+
+                        <TextView
+                            android:id="@+id/profile_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="#998a6d3b"
+                            android:textSize="12pt"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
-                    <TextView
-                        android:id="@+id/profile_gender_icon"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" 성별 "
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/profile_gender_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
 
-                    <TextView
-                        android:id="@+id/profile_gender_icon_angle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                            android:textColor="#558a6d3b"
+                            android:textSize="12pt" />
 
-                    <TextView
-                        android:id="@+id/profile_gender"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 성별 "
+
+                            android:textColor="#558a6d3b"
+                            android:textSize="12pt"
+                            />
+
+                        <TextView
+                            android:id="@+id/profile_gender_icon_angle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="#558a6d3b"
+                            android:textSize="12pt" />
+
+                        <TextView
+                            android:id="@+id/profile_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="#998a6d3b"
+                            android:textSize="12pt"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
-                    <TextView
-                        android:id="@+id/profile_birth_icon"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" 생년월일 "
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/profile_birth_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#558a6d3b"
+                            android:textSize="12pt" />
 
-                    <TextView
-                        android:id="@+id/profile_birth_icon_angle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 생년월일 "
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#558a6d3b"
+                            android:textSize="12pt"
+                             />
 
-                    <TextView
-                        android:id="@+id/profile_birth"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#8a6d3b"
-                        android:textSize="8pt" />
+                        <TextView
+                            android:id="@+id/profile_birth_icon_angle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#558a6d3b"
+                            android:textSize="12pt" />
+
+                        <TextView
+                            android:id="@+id/profile_birth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#998a6d3b"
+                            android:textSize="12pt"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
                 </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/horizon_line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txv_logout_icon_profile_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/helloants_gray2" />
+
+                <TextView
+                    android:id="@+id/txv_logout_profile_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="로그아웃"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/helloants_black"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

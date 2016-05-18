@@ -4,8 +4,10 @@
     android:id="@+id/content_detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.helloants.mm.helloants1.activity.ContentDetailActivity">
-    <android.support.v4.view.ViewPager
+    tools:context="com.helloants.mm.helloants1.activity.ContentDetailActivity"
+    android:background="#30333A"
+    >
+    <com.helloants.mm.helloants1.data.zoomCheck.CustomViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -29,12 +31,40 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:textSize="30dp"/>
+                android:textSize="25dp"/>
 
+            <TextView
+                android:id="@+id/text_share_cDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/text_like_cDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/text_scrap_cDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/text_reply_cDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="25dp"/>
             <LinearLayout
                 android:id="@+id/img_gallery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -43,45 +73,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="2.5dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textSize="25dp"/>
 
                 <TextView
                     android:id="@+id/image_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
                 />
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/text_share_cDetail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:textSize="30dp"/>
-
-            <TextView
-                android:id="@+id/text_like_cDetail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:textSize="30dp"/>
-
-            <TextView
-                android:id="@+id/text_scrap_cDetail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:textSize="30dp"/>
-
-            <TextView
-                android:id="@+id/text_reply_cDetail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:textSize="30dp"/>
         </LinearLayout>
     </HorizontalScrollView>
 
